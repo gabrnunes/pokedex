@@ -1,4 +1,4 @@
-Esta é uma Pokedéx feita usando [NextJS](https://nextjs.org/) e os dados da [PokeApi](https://pokeapi.co/). O sistema possui deploy automático com a Vercel e pode ser acesso [neste link](https://pokedex-nextjs.vercel.app).
+Esta é uma Pokedéx feita usando [NextJS](https://nextjs.org/) e os dados da [PokeApi](https://pokeapi.co/). O sistema possui deploy automático com a Vercel e pode ser acesso [neste link](https://pokedex-phi-nine.vercel.app/).
 
 ## Começando
 
