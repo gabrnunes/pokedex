@@ -10,8 +10,14 @@ export default async function getPokemon(req, res) {
     });
   }
 
-  const number = req.body.number || '';
-  const pokemon = await getOnePokemon(number);
+  const numberOrName = req.body.numberOrName || '';
+  const pokemon = await getOnePokemon(numberOrName);
+  
+  if (!pokemon) {
+    return res.status(200).json({
+      notFound: true
+    });
+  }
 
   return res.status(200).json(pokemon);
 }
