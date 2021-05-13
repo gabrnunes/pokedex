@@ -13,7 +13,7 @@ export default function PokemonListView({
         <div className={styles.container}>
             <div className={styles.list}>
                 {pokemon.map(p => (
-                    <PokemonCard name={p.name} type={p.types[0].type.name} image={p.image} />
+                    <PokemonCard key={p.id} name={p.name} type={p.types[0].type.name} image={p.image} />
                 ))}
             </div>
             <div className={styles.pagination}>
