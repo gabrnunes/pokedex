@@ -1,22 +1,50 @@
 .form {
-    min-width: 420px;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    .form {
+        width: auto;
+        min-width: 420px;
+    }
 }
 
 .input {
     padding: 1rem;
-    flex: 1;
+    width: 100%;
+    margin-right: 1rem;
+}
+
+@media (min-width: 900px) {
+    .input {
+        width: 300px;
+    }
 }
 
 .button {
-    background-color: var(--red);
+    background-color: var(--gray);
     color: var(--white);
     border: 0;
     padding: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+@media (min-width: 900px) {
+    .button {
+        width: 100px;
+        margin-top: 0;
+    }
 }
 
 .loading {
+    display: block;
     width: 32px;
+}
+
+@media (min-width: 900px) {
+    .loading {
+        display: inline;
+    }
 }

@@ -6,23 +6,49 @@
 }
 
 .card {
-    width: 270px;
-    height: 290px;
+    width: 90vw;
     position: absolute;
-    top: 170px;
-    right: 200px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (min-width: 900px) {
+    .card {
+        width: 270px;
+        height: 290px;
+        top: 170px;
+        right: 200px;
+        left: auto;
+        transform: translateX(0);
+    }
 }
 
 .notFound {
-    width: 270px;
+    background-color: var(--white);
+    width: 90vw;
     height: 290px;
     position: absolute;
-    top: 170px;
-    right: 200px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+@media (min-width: 900px) {
+    .notFound {
+        background-color: transparent;
+        width: 270px;
+        height: 290px;
+        top: 170px;
+        right: 200px;
+        left: auto;
+        transform: translateX(0);
+    }
+}
+
 
 .st0{fill:#FEFEFE;}
 .st1{fill:#050505;}

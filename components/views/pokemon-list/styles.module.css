@@ -5,9 +5,18 @@
 
 .list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, auto);
+    width: 90vw;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     grid-gap: 2rem;
+}
+
+@media (min-width: 900px) {
+    .list {
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .pagination {

@@ -1,9 +1,18 @@
 .container {
     max-width: 1000px;
-    margin: 0 auto;
+    padding: 0 2rem;
+    margin: 0 auto 5rem;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr;
     gap: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    .container {
+        text-align: left;
+        grid-template-columns: auto auto;
+    }
 }
 
 .title {
@@ -13,4 +22,11 @@
 .tagList {
     display: flex;
     gap: .5rem;
+    justify-content: center;
+}
+
+@media (min-width: 900px) {
+    .tagList {
+        justify-content: flex-start;
+    }
 }

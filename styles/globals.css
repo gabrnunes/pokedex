@@ -1,6 +1,6 @@
 :root {
   --white: #ffffff;
-  --red: #A31111;
+  --gray: #313131;
   --lightgray: #f0f0f0;
   --type-normal: #A8A878;
   --type-fire: #F08030;
@@ -10,7 +10,7 @@
   --type-grass: #78C850;
   --type-poison: #A040A0;
   --type-electric: #F8D030;
-  --type-ground: #E0C068;
+  --type-ground: #a09e9a;
   --type-psychic: #F85888;
   --type-rock: #B8A038;
   --type-ice: #98D8D8;
