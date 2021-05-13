@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from './styles.module.css';
 
 export default function Header({
-    title
+    title, children
 }) {  
     return (
         <div className={styles.container}>
@@ -11,6 +11,7 @@ export default function Header({
                 <h1>Pokedex</h1>
             </Link>
             {title && <h2>{title}</h2>}
+            {children}
         </div>
     );
 };
