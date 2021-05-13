@@ -6,7 +6,7 @@ import Header from '../../components/presentation/header';
 export default function All({ pokemon }) {
     return (
         <>
-            <Header title="Todos os Pokémon" />
+            <Header title="All Pokémon" />
             <PokemonListView pokemon={pokemon.data} nextPage={pokemon.nextPage} />
         </>
     )
