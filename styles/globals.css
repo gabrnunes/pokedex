@@ -1,5 +1,6 @@
 :root {
   --white: #ffffff;
+  --red: #A31111;
   --lightgray: #f0f0f0;
   --type-normal: #A8A878;
   --type-fire: #F08030;
@@ -32,6 +33,10 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.default-link:hover {
+  text-decoration: underline;
 }
 
 * {
