@@ -5,15 +5,15 @@ import cn from 'classnames';
 import styles from './styles.module.css';
 
 export default function PokemonCard({
-    name, type, image
+    name, type, image, style
 }) {  
     return (
         <Link href={`/pokemon/${name}`}>
-            <div className={cn([styles.card, styles[`${type}`]])}>
+            <a className={cn([styles.card, styles[`${type}`], style])}>
                 <Image className={styles.image} src={image} width="64" height="64" loading="lazy" />
                 <h2 className={styles.title}>{name}</h2>
                 <p>{type}</p>
-            </div>
+            </a>
         </Link>
     );
 };
